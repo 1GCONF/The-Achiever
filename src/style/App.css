@@ -36,21 +36,22 @@ input::placeholder {
   color: #930cfb;
 }
 
-.control-button, .start-button {
+.control-button,
+.start-button {
   color: #616161;
 }
 
 .control-button:hover {
-  color: rgb(205, 0, 0);
-  background-color: rgba(35, 35, 35, 0.196);
+  color: #740000;
+  background-color: rgba(35, 35, 35, 0.746);
 }
 
 .control-plus {
-  border-radius: 25px 0 0 0;
+  border-radius: 5;
 }
 
 .control-minus {
-  border-radius: 0 0 0 25px;
+  border-radius: 5;
 }
 
 .start-button {
@@ -59,7 +60,7 @@ input::placeholder {
 
 .start-button:hover {
   color: rgb(87, 186, 71);
-  background-color: rgba(35, 35, 35, 0.196);
+  background-color: rgba(35, 35, 35, 0.746);
 }
 
 @media screen and (max-width: 600px) {
