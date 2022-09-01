@@ -1,19 +1,13 @@
 import styled from "styled-components";
 import { useState } from "react";
 const TodoListItembox = styled.li`
+  width: 100%;
+  margin: 0 auto;
+  min-height: 4.5rem;
 
   display:grid;
   grid-template-columns:6fr 1fr 2fr;
-  width: 100%;
-  margin: 0 auto;
-  min-height: 4.5rem;
 
-  background-color: rgba(70, 14, 0, 0.746);
-
-  display: grid;
-  width: 100%;
-  margin: 0 auto;
-  min-height: 4.5rem;
   background:transparent;
   background-color: rgba(25, 14, 0, 0.746);
 `;
@@ -36,7 +30,6 @@ const TaskTextbox = styled.label`
   justify-self:center;
   background-color: rgba(35, 35, 35, 0.746);
 `;
-
 const TaskText = styled.input`
   width: calc(100%);
   justify-self: center;
@@ -51,7 +44,6 @@ const TaskText = styled.input`
     background-color:rgb(82, 78, 82);
   }
 `;
-
 const Clockbox = styled.label`
   justify-self: center;
   width: 100%;
@@ -253,24 +245,18 @@ export const TodoItem = () => {
           e.preventDefault();
         }}
       />
-
-
-      {/* <Clockbox htmlFor="clockInput" className="clockbox">
-        <ClockContainer className="clockContainer">
-          <ClockInput
-            type="text"
-            placeholder={duration}
-            value={duration}
-            onChange={(e) => {
-              setDuration(e.target.value);
-            }}
-          ></ClockInput>
-          <ClockDurationUnit>
-            <DurationUnitText>{durationUnit}</DurationUnitText>
-          </ClockDurationUnit>
-        </ClockContainer>
+      <Clockbox htmlFor="clockInput" className="clockbox">
 
         <ClockControlsContainer className="clock-controls">
+          <ControlButton
+            className="control-button control-plus"
+            onClick={(e) => {
+              e.preventDefault();
+              setDuration(duration + step);
+            }}
+          >
+            +
+          </ControlButton>
           <ControlButton
             className="control-button control-minus"
             onClick={(e) => {
@@ -282,61 +268,24 @@ export const TodoItem = () => {
           >
             -
           </ControlButton>
-
-          <ControlButton
-            className="control-button control-plus"
-            onClick={(e) => {
-              e.preventDefault();
-              setDuration(duration + step);
-            }}
-          >
-            +
-          </ControlButton>
         </ClockControlsContainer>
-      </Clockbox> */}
 
+        <ClockContainer className="clock-container">
+          <ClockInput className="clock-input"
+            type="text"
+            placeholder={duration}
+            value={duration}
+            onChange={(e) => {
+              setDuration(+e.target.value);
+            }}
+          ></ClockInput>
+          <ClockDurationUnit className="clock-durationbox">
+            <DurationUnitText className="clock-durationtext">{durationUnit}</DurationUnitText>
+          </ClockDurationUnit>
+        </ClockContainer>
 
+      </Clockbox>
 
-
-<Clockbox htmlFor="clockInput" className="clockbox">
-
-<ClockControlsContainer className="clock-controls">
-  <ControlButton
-    className="control-button control-plus"
-    onClick={(e) => {
-      e.preventDefault();
-      setDuration(duration + step);
-    }}
-  >
-    +
-  </ControlButton>
-  <ControlButton
-    className="control-button control-minus"
-    onClick={(e) => {
-      e.preventDefault();
-      if (duration >= step) {
-        setDuration(duration - step);
-      }
-    }}
-  >
-    -
-  </ControlButton>
-</ClockControlsContainer>
-
-<ClockContainer className="clock-container">
-  <ClockInput className="clock-input"
-    type="text"
-    placeholder={duration}
-    value={duration}
-    onChange={(e) => {
-      setDuration(e.target.value);
-    }}
-  ></ClockInput>
-  <ClockDurationUnit className="clock-durationbox">
-    <DurationUnitText className="clock-durationtext">{durationUnit}</DurationUnitText>
-  </ClockDurationUnit>
-</ClockContainer>
-</Clockbox>
     </TodoListItembox>
   );
 };
