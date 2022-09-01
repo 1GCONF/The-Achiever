@@ -6,7 +6,10 @@
   border: 0;
   outline: 0;
   font-size: 21px;
+<<<<<<< HEAD
   box-shadow: 0 4px 4px rgba(16, 14, 18, 0.4666666667);
+=======
+>>>>>>> 865c305f2cbe324946efed833b336cb6062cf6bc
   text-shadow: 0 4px 4px rgba(25, 25, 25, 0.25);
   font-family: "Kameron", serif;
 }
@@ -16,6 +19,10 @@ body {
   background: url(./img/bg_mountain.jpg);
   background-size: cover;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 865c305f2cbe324946efed833b336cb6062cf6bc
 body > * {
   margin: 0;
   padding: 0;
@@ -37,16 +44,20 @@ input::placeholder {
   color: #930cfb;
 }
 
+<<<<<<< HEAD
 .clock-input {
   color: yellow;
 }
 
+=======
+>>>>>>> 865c305f2cbe324946efed833b336cb6062cf6bc
 .control-button,
 .start-button {
   color: #616161;
 }
 
 .control-button:hover {
+<<<<<<< HEAD
   color: rgb(205, 0, 0);
   background-color: rgba(35, 35, 35, 0.196);
 }
@@ -57,6 +68,18 @@ input::placeholder {
 
 .control-minus {
   border-radius: 0 0 0 25px;
+=======
+  color: #740000;
+  background-color: rgba(35, 35, 35, 0.746);
+}
+
+.control-plus {
+  border-radius: 5;
+}
+
+.control-minus {
+  border-radius: 5;
+>>>>>>> 865c305f2cbe324946efed833b336cb6062cf6bc
 }
 
 .start-button {
@@ -64,8 +87,13 @@ input::placeholder {
 }
 
 .start-button:hover {
+<<<<<<< HEAD
   color: rgb(87, 186, 71);
   background-color: rgba(35, 35, 35, 0.196);
+=======
+  color: #57ba47;
+  background-color: rgba(35, 35, 35, 0.746);
+>>>>>>> 865c305f2cbe324946efed833b336cb6062cf6bc
 }
 
 @media screen and (max-width: 600px) {
@@ -73,5 +101,8 @@ input::placeholder {
     grid-template-columns: 1fr;
   }
 }
+<<<<<<< HEAD
 
 /*# sourceMappingURL=style.css.map */
+=======
+>>>>>>> 865c305f2cbe324946efed833b336cb6062cf6bc
