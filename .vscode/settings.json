@@ -3,5 +3,6 @@
       "activityBar.background": "#0C2A65",
       "titleBar.activeBackground": "#113B8E",
       "titleBar.activeForeground": "#F8FAFE"
-   }
+   },
+   "editor.fontFamily": "Consolas, 'Courier New', monospace"
 }

@@ -18,7 +18,7 @@ export default function Welcome(props) {
   return (
     <WelcomeSection className="welcome-section">
       <WelcomeBox>
-        <WelcomeText>Welcome, {username}</WelcomeText>
+        <WelcomeText>Hi, {username}</WelcomeText>
       </WelcomeBox>
     </WelcomeSection>
   );

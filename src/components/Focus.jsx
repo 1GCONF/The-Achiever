@@ -1,10 +1,8 @@
 import styled from "styled-components";
 import { TodoItem } from "./TodoItem";
 const FocusSection = styled.section``;
-const FocusTitlebox = styled.div`
-  text-align: center;
-`;
 const FocusText = styled.h2`
+text-align: center;
   text-transform: capitalize;
   font-size: 1.5rem;
   font-weight: 600;
@@ -20,11 +18,9 @@ const TodoList=styled.ul`
 export default function Focus() {
   return (
     <FocusSection className="focus-section">
-      <FocusTitlebox>
         <FocusText>today's focus:</FocusText>
-      </FocusTitlebox>
       <TodoFrom>
-        <TodoList>
+        <TodoList className="Todo-UnorderedList">
           <TodoItem />
         </TodoList>
       </TodoFrom>

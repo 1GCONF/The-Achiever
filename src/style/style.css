@@ -6,26 +6,8 @@
   border: 0;
   outline: 0;
   font-size: 21px;
-<<<<<<< HEAD
-  box-shadow: 0 4px 4px rgba(16, 14, 18, 0.4666666667);
-=======
->>>>>>> 865c305f2cbe324946efed833b336cb6062cf6bc
-  text-shadow: 0 4px 4px rgba(25, 25, 25, 0.25);
   font-family: "Kameron", serif;
-}
-
-body {
-  background-color: rgba(12, 12, 12, 0.805);
-  background: url(./img/bg_mountain.jpg);
-  background-size: cover;
-}
-<<<<<<< HEAD
-=======
-
->>>>>>> 865c305f2cbe324946efed833b336cb6062cf6bc
-body > * {
-  margin: 0;
-  padding: 0;
+  word-break: break-all;
 }
 
 li {
@@ -36,73 +18,77 @@ a {
   text-decoration: none;
 }
 
-input::placeholder {
+body {
+  background-color: rgba(12, 12, 12, 0.805);
+  background: url(./img/bg_mountain.jpg);
+  background-size: cover;
+}
+
+body > * {
+  margin: 0;
+  padding: 0;
+}
+
+body .Todo-UnorderedList .TodoListItembox .textbox .text-input {
   text-align: center;
   opacity: 0.4;
   font-size: 1.5rem;
   height: 100%;
-  color: #930cfb;
+  color: #b88cd9;
 }
 
-<<<<<<< HEAD
-.clock-input {
-  color: yellow;
+body .Todo-UnorderedList .TodoListItembox .textbox .text-input::placeholder {
+  opacity: 0.7;
 }
 
-=======
->>>>>>> 865c305f2cbe324946efed833b336cb6062cf6bc
-.control-button,
-.start-button {
-  color: #616161;
+body .Todo-UnorderedList .TodoListItembox .start-button {
+  box-shadow: 0px 1px 2px #c0c0c05b;
 }
 
-.control-button:hover {
-<<<<<<< HEAD
-  color: rgb(205, 0, 0);
+body .Todo-UnorderedList .TodoListItembox .clockbox .clock-controls > * {
+  box-shadow: 0px 1px 2px #c0c0c05b;
+}
+
+body .Todo-UnorderedList .TodoListItembox .clockbox .clock-timestamp {
+  /* ff 3.6+ */
+  background: -moz-linear-gradient(180deg, #251200 0%, black 51%, #140000 99%);
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-linear-gradient(180deg, #251200 0%, black 51%, #140000 99%);
+  /* opera 11.10+ */
+  background: -o-linear-gradient(180deg, #251200 0%, black 51%, #140000 99%);
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#140000', endColorstr='#251200', GradientType=1 );
+  /* ie 10+ */
+  background: -ms-linear-gradient(180deg, #251200 0%, black 51%, #140000 99%);
+  /* global 94%+ browsers support */
+  background: linear-gradient(180deg, #251200 0%, black 51%, #140000 99%);
+}
+
+body .Todo-UnorderedList .TodoListItembox .clockbox .clock-timestamp > * {
+  box-shadow: 0px 1px 2px #c0c0c05b;
+}
+
+body .Todo-UnorderedList .TodoListItembox .clockbox .clock-timestamp .clock-input {
+  color: red;
   background-color: rgba(35, 35, 35, 0.196);
+  cursor: pointer;
 }
 
-.control-plus {
-  border-radius: 25px 0 0 0;
-}
-
-.control-minus {
-  border-radius: 0 0 0 25px;
-=======
-  color: #740000;
+body .Todo-UnorderedList .TodoListItembox .clockbox .clock-timestamp .clock-input:hover {
   background-color: rgba(35, 35, 35, 0.746);
 }
 
+body .Todo-UnorderedList .TodoListItembox .clockbox .clock-timestamp .clock-durationbox .clock-durationtext {
+  box-shadow: none;
+  text-shadow: none;
+}
+
 .control-plus {
-  border-radius: 5;
+  border-radius: 25px 0 0 25px;
+  line-height: 0;
 }
 
 .control-minus {
-  border-radius: 5;
->>>>>>> 865c305f2cbe324946efed833b336cb6062cf6bc
+  border-radius: none;
+  line-height: 0;
 }
-
-.start-button {
-  box-shadow: 3px 6px 24px rgba(192, 202, 188, 0.196);
-}
-
-.start-button:hover {
-<<<<<<< HEAD
-  color: rgb(87, 186, 71);
-  background-color: rgba(35, 35, 35, 0.196);
-=======
-  color: #57ba47;
-  background-color: rgba(35, 35, 35, 0.746);
->>>>>>> 865c305f2cbe324946efed833b336cb6062cf6bc
-}
-
-@media screen and (max-width: 600px) {
-  .TodoListItembox {
-    grid-template-columns: 1fr;
-  }
-}
-<<<<<<< HEAD
-
-/*# sourceMappingURL=style.css.map */
-=======
->>>>>>> 865c305f2cbe324946efed833b336cb6062cf6bc
