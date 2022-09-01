@@ -128,8 +128,7 @@ body {
     @include gradient_dark;
   }
 }
-<<<<<<< HEAD
-=======
+
 li {
   list-style-type: none;
 }
@@ -143,22 +142,17 @@ input::placeholder {
   height: 100%;
   color: #930cfb;
 }
->>>>>>> 865c305f2cbe324946efed833b336cb6062cf6bc
+
 .control-button,
 .start-button {
   color: #616161;
-}
-.control-button:hover {
-<<<<<<< HEAD
-  color: rgb(205, 0, 0);
-  background-color: rgba(35, 35, 35, 0.196);
 }
 .control-plus {
   border-radius: 25px 0 0 0;
 }
 .control-minus {
   border-radius: 0 0 0 25px;
-=======
+
   color: #740000;
   background-color: rgba(35, 35, 35, 0.746);
 }
@@ -167,22 +161,14 @@ input::placeholder {
 }
 .control-minus {
   border-radius: 5;
->>>>>>> 865c305f2cbe324946efed833b336cb6062cf6bc
+
 }
 .start-button {
-  box-shadow: 3px 6px 24px rgba(192, 202, 188, 0.196);
+
+
 }
 .start-button:hover {
-  color: rgb(87, 186, 71);
-  background-color: rgba(35, 35, 35, 0.746);
+
+  // background-color: rgba(35, 35, 35, 0.746);
 }
-<<<<<<< HEAD
-.TodoListItembox {
-  @media screen and(max-width:600px) {
-=======
-@media screen and (max-width:600px) {
-  .TodoListItembox {
->>>>>>> 865c305f2cbe324946efed833b336cb6062cf6bc
-    grid-template-columns: 1fr;
-  }
-}
+
