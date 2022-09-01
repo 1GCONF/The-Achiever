@@ -6,8 +6,17 @@
   border: 0;
   outline: 0;
   font-size: 21px;
+  box-shadow: 0 4px 4px rgba(16, 14, 18, 0.4666666667);
   text-shadow: 0 4px 4px rgba(25, 25, 25, 0.25);
   font-family: "Kameron", serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
@@ -19,24 +28,60 @@ body > * {
   margin: 0;
   padding: 0;
 }
-
-li {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-input::placeholder {
+body .text-input {
   text-align: center;
   opacity: 0.4;
   font-size: 1.5rem;
   height: 100%;
-  color: #930cfb;
+  color: #b88cd9;
+}
+body .text-input::placeholder {
+  opacity: 0.2;
+}
+body .clock-container {
+  /* ff 3.6+ */
+  background: -moz-linear-gradient(180deg, rgb(61, 45, 0) 0%, rgb(154, 33, 0) 52%, rgb(37, 26, 0) 99%);
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-linear-gradient(180deg, rgb(61, 45, 0) 0%, rgb(154, 33, 0) 52%, rgb(37, 26, 0) 99%);
+  /* opera 11.10+ */
+  background: -o-linear-gradient(180deg, rgb(61, 45, 0) 0%, rgb(154, 33, 0) 52%, rgb(37, 26, 0) 99%);
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#251A00", endColorstr="#3D2D00", GradientType=1 );
+  /* ie 10+ */
+  background: -ms-linear-gradient(180deg, rgb(61, 45, 0) 0%, rgb(154, 33, 0) 52%, rgb(37, 26, 0) 99%);
+  /* global 94%+ browsers support */
+  /* ff 3.6+ */
+  background: -moz-linear-gradient(180deg, rgb(37, 18, 0) 0%, rgb(0, 0, 0) 51%, rgb(20, 0, 0) 99%);
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-linear-gradient(180deg, rgb(37, 18, 0) 0%, rgb(0, 0, 0) 51%, rgb(20, 0, 0) 99%);
+  /* opera 11.10+ */
+  background: -o-linear-gradient(180deg, rgb(37, 18, 0) 0%, rgb(0, 0, 0) 51%, rgb(20, 0, 0) 99%);
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#140000", endColorstr="#251200", GradientType=1 );
+  /* ie 10+ */
+  background: -ms-linear-gradient(180deg, rgb(37, 18, 0) 0%, rgb(0, 0, 0) 51%, rgb(20, 0, 0) 99%);
+  /* global 94%+ browsers support */
+  background: linear-gradient(180deg, rgb(37, 18, 0) 0%, rgb(0, 0, 0) 51%, rgb(20, 0, 0) 99%);
+}
+body .clock-container > * {
+  box-shadow: none;
+  text-shadow: none;
+}
+body .clock-container .clock-input {
+  color: red;
+  background-color: rgba(35, 35, 35, 0.196);
+  cursor: pointer;
+}
+body .clock-container .clock-input:hover {
+  background-color: rgba(35, 35, 35, 0.746);
+}
+body .clock-container .clock-durationbox .clock-durationtext {
+  box-shadow: none;
+  text-shadow: none;
 }
 
-.control-button, .start-button {
+.control-button,
+.start-button {
   color: #616161;
 }
 
